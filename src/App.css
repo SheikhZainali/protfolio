@@ -1,38 +1,306 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  width: 100%;
+  height: auto;
+  background-image: url("./image/background3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+.row{
+  display: flex;
+  width: 100%;
+  height: auto;
+  /* height: 100vh; */
+  padding: 1px;
+  margin: 1px;
+  /* align-items: center; */
+  /* margin-top: 300px; */
+  flex-wrap: wrap;
+
+}
+.col-6{
+  width: 50%;
+  margin-left: 0px;
+  
+}
+ @media (max-width: 480px) {
+  .col-6{
+    width: 100%;
+  }
+}
+.header-content{
+ display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header-ul{
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 15px;
+
+}
+.header-section{
+  margin-left: 70px;
+}
+.header-section h1{
+  color: rgb(9, 0, 0);
+ 
+
+}
+.header-section p{
+  color: rgb(9, 0, 0);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(177, 179, 158);
+  position: fixed;
+  top: 0;
+  z-index: 100000px;
+
+}
+.navbar .menu {
+  display: none;
+  position: absolute;
+  top: 1.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #0f0101;
+  color: black;
+  border-radius: 0.2rem;
+}
+
+
+@media (max-width: 480px) {
+  .navbar .menu {
+      display: flex;
+  }
+
+  .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar ul {
+    margin-top: 8px;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.25rem;
+  }
+
+  .navbar ul.open {
+      display: flex;
+      width: 100%;
+  }
+
+  .navbar ul li {
+      width: 100%;
+      text-align: center;
+      margin-top: 9px;
+  }
+
+  .navbar ul li a {
+      margin: 0.2rem 0.5rem;
+      color: black;
+      padding: 2px;
+      font-size: large;
+      background-color: rgb(177, 179, 158);
+      width: 100%;
+      margin-top: 100px;
+      border: 1px solid black;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-ul li{
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 15px;
+  color: rgb(9, 0, 0);
+
+}
+.Header-button{
+  margin:10px;
+  width: 70px;
+  height: 70px;
+}
+.btn{
+ width: 50px;
+ height: 50px;
+ 
+  margin: 5px;
+  border: 2px solid white;
+  color: rgb(255, 0, 0);
+
+  border-radius: 50%;
+  /* background-color:; */
+} 
+.header-img{
+  height: 100vh;
+  width: 100%;
+ 
+}
+.header-img img{
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.container-navbar{
+  display: flex;
+  width: 100%;
+   height: auto;
+align-items: center;
+justify-content: space-between;
 }
+.navbar-left-img{
+width: 70px;
+height: 55px;
+}
+.navbar-left-img img{
+  width: 100%;
+  height: 100%;
+}
+.navbar-right{
+  list-style-type: none;
+  display: flex;
+  
+}
+.navbar-right li a{
+  text-decoration: none;
+  color: rgb(9, 0, 0);
+  margin: 10px;
+}
+/* services */
+.services-heading{
+  width: 50.33%;
+  margin: 20px auto;
+  align-items: center;
+  justify-self: center;
+  background-color: rgb(177, 179, 158);
+  color: rgb(9, 0, 0);
+  text-align: center;
+}
+.Services{
+  padding: 50px 0;
+  background-color:rgb(255, 252, 252) ;
+  color: rgb(9, 0, 0);
+}
+.main-heading{
+  color: red;
+}
+.servisec-footer{
+  height: 3px;
+  width: 120px;
+background-color: red;
+margin: 20px auto;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.col-4{
+  width: 33.3333%;
+}
+@media (max-width:500px) {
+  .col-4{
+    width: 97%;
+    margin: 1%;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .service-box{
+    width: 100%;
   }
+}
+.service-box{
+  height: 200px;
+  background-color:rgb(177, 179, 158);
+  padding: 30px;
+  margin: 10px;
+}
+.service-box-icone{
+margin: 10px;
+font-size: 40px;
+}
+.service-box-heading{
+  font-size: 20px;
+  color: rgb(9, 0, 0);
+ text-transform: uppercase;
+padding-right: 10px;
+padding-bottom: 10px;
+}
+.service-box-content{
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.About{
+  padding: 5px 10px;
+ 
+  background-color:black ;
+  color: rgb(9, 0, 0);
+}
+.about-detail{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 1px;
+  text-align: start;
+  background-color: black;
+  padding-left: 60px;
+
+}
+.about-header-img{
+  height: 100vh;
+  width: 100%;
+}
+.about-header-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.about-info{
+  /* margin: 20px auto;
+  padding: 30px; */
+  margin-top: 30px;
+}
+.about-info h1 {
+  color: rgb(185, 64, 64);
+padding-bottom: 5px;
+}
+.about-info p{
+  color: #fff;
 }
